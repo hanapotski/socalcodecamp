@@ -514,13 +514,18 @@ app.use(express.static('public))
 
 
 <details>
-<summary>Add <code>script</code> tag to footer.ejs</summary>
+<summary>Add <code>script</code> tag to index.ejs</summary>
 <p>
 
 ```html
+<% include partials/header %>
+
+  <h1>Welcome to SoCal Codecamp!</h1>
+  <button id="register">Register</button>
+
   <script src="main.js"></script>
-</body>
-</html>
+<% include partials/footer %>
+
 ```
 
 </p>
