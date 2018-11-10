@@ -1,0 +1,10 @@
+<% include partials/header %>
+
+  <h1>Registered Campers</h1>
+  <ul>
+    <% for(let camper of campers) { %>
+      <li><%= camper.name %></li>
+    <% }%>
+  </ul>
+
+<% include partials/footer %>
